@@ -58,6 +58,7 @@ module GraphedFuzzySearch
           attr.to_s.downcase.scan(token_regex)
         end
         tokens.push(*attrs)
+        tokens.reject(&:empty?)
         Item.new(obj, attrs[0], tokens.uniq)
       end
     end
