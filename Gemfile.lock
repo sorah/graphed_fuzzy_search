@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    graphed_fuzzy_search (0.2.0)
+    graphed_fuzzy_search (0.2.1)
 
 GEM
   remote: https://rubygems.org/
