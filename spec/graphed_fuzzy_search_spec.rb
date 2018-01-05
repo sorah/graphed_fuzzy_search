@@ -18,6 +18,8 @@ RSpec.describe GraphedFuzzySearch do
     specify "'a'" do
       expect(collection.query('a')).to eq(["alice-eve", "john-appleseed"])
     end
-
+    specify "'alice-eve'" do
+      expect(collection.query('alice-eve')).to eq(["alice-eve"])
+    end
   end
 end

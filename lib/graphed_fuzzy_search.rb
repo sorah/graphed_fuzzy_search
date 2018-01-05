@@ -57,6 +57,7 @@ module GraphedFuzzySearch
         tokens = attrs.flat_map do |attr|
           attr.to_s.downcase.scan(token_regex)
         end
+        tokens.push(*attrs)
         Item.new(obj, attrs[0], tokens)
       end
     end
